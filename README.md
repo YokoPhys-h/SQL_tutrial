@@ -56,4 +56,22 @@
 ## 取得件数の制限
 `select * from <DB> limit 0,10`: DBから0から10番目まで取得. (0を省略すると自動的に0スタートになる.)
 
-## 取得データの書き出し
+## 関数
+`sum()`: 和を求める.
+
+`avg()`: 平均を求める.
+
+`min()`: 最小値を求める.
+
+`max()`: 最大値を求める.
+
+`count()`: 要素数を数える.
+
+`count(distinct, hoge)`: hogeのうち, 重複を許さずに数える.
+
+`abs()`: 絶対値を求める.
+
+`concat(<hoge1>,<hoge2>)`: hoge1とhoge2の文字列の連結を行う.
+
+### 追加オプション
+`select <hoge> from <DB> group by <hoge2>`: hoge2をグループ(同じ値)でまとめて, hogeを取得.
